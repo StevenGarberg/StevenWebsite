@@ -934,9 +934,33 @@ section {
         opacity: 0;
     }
 
-    .nav-toggle.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
-    }
+.nav-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav-social {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-social a {
+    color: var(--text-secondary);
+    transition: color 0.2s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-social a:hover {
+    color: var(--accent-light);
+    transform: translateY(-1px);
+}
+
+.nav-social svg {
+    width: 18px;
+    height: 18px;
+}
 
     .hero-name {
         font-size: 2.2rem;
@@ -967,6 +991,19 @@ section {
 
     .timeline-screenshot img {
         max-height: 200px;
+    }
+
+    .nav-social {
+        display: none;
+    }
+
+    .nav-links.open .nav-social,
+    .nav-links.nav-social-mobile {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+        margin-top: 20px;
     }
 
     .link-grid {

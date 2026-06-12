@@ -19,9 +19,23 @@
     });
 
     // Mobile nav toggle
+    const navSocial = document.querySelector('.nav-social');
     navToggle.addEventListener('click', function() {
         this.classList.toggle('active');
         navLinks.classList.toggle('open');
+        if (window.innerWidth <= 640) {
+            if (navLinks.classList.contains('open')) {
+                navSocial.style.display = 'flex';
+            } else {
+                navSocial.style.display = '';
+            }
+        }
+    });
+
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 640) {
+            navSocial.style.display = '';
+        }
     });
 
     // Close mobile nav on link click
