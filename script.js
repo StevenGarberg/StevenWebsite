@@ -64,6 +64,25 @@
         });
     }
 
+    // Show More / Show Less toggle for timeline highlights
+    document.querySelectorAll('.show-more-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var highlights = this.previousElementSibling;
+            if (highlights && highlights.classList.contains('timeline-highlights')) {
+                var isCollapsed = highlights.classList.contains('collapsed');
+                if (isCollapsed) {
+                    highlights.classList.remove('collapsed');
+                    this.textContent = 'Show Less';
+                    this.setAttribute('aria-expanded', 'true');
+                } else {
+                    highlights.classList.add('collapsed');
+                    this.textContent = 'Show More';
+                    this.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+    });
+
     // Smooth scroll for anchor links (fallback for older browsers)
     document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
         anchor.addEventListener('click', function(e) {

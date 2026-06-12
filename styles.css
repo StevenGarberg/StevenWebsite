@@ -597,6 +597,51 @@ section {
     background: var(--accent);
 }
 
+.timeline-highlights .highlight-title {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.timeline-highlights.collapsed li:nth-child(n+3) {
+    display: none;
+}
+
+.show-more-btn {
+    display: none;
+    background: none;
+    border: 1px solid var(--border-light);
+    color: var(--accent-light);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.show-more-btn:hover {
+    background: var(--accent-glow);
+}
+
+.timeline-highlights.collapsed + .show-more-btn {
+    display: inline-flex;
+}
+
+.timeline-screenshot {
+    margin-top: 16px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+.timeline-screenshot img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
 /* ===== SKILLS ===== */
 #skills {
     background: var(--bg-secondary);
@@ -827,5 +872,9 @@ section {
     .hero-actions {
         flex-direction: column;
         align-items: center;
+    }
+
+    .timeline-screenshot img {
+        max-height: 200px;
     }
 }

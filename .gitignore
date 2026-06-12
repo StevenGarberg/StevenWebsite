@@ -4,3 +4,8 @@ images/*.png
 images/*.gif
 images/*.webp
 images/*.svg
+images/screenshots/*.png
+images/screenshots/*.jpg
+images/screenshots/*.jpeg
+images/screenshots/*.gif
+images/screenshots/*.webp
