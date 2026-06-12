@@ -4,6 +4,7 @@
     const navLinks = document.querySelector('.nav-links');
     const timelineItems = document.querySelectorAll('.timeline-item');
     const focusCards = document.querySelectorAll('.focus-card');
+    const subsidiaryCards = document.querySelectorAll('.subsidiary-card');
 
     // Navbar scroll effect
     let lastScroll = 0;
@@ -55,11 +56,18 @@
         focusCards.forEach(function(card) {
             observer.observe(card);
         });
+
+        subsidiaryCards.forEach(function(card) {
+            observer.observe(card);
+        });
     } else {
         timelineItems.forEach(function(item) {
             item.classList.add('visible');
         });
         focusCards.forEach(function(card) {
+            card.classList.add('visible');
+        });
+        subsidiaryCards.forEach(function(card) {
             card.classList.add('visible');
         });
     }
