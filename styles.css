@@ -73,6 +73,30 @@ body {
     height: 64px;
 }
 
+.nav-social {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.nav-social a {
+    color: var(--text-muted);
+    transition: color 0.2s;
+    display: inline-flex;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.nav-social a:hover {
+    color: var(--accent-light);
+    background: var(--accent-glow);
+}
+
+.nav-social svg {
+    width: 16px;
+    height: 16px;
+}
+
 .nav-logo {
     font-family: 'JetBrains Mono', monospace;
     font-weight: 700;
@@ -941,20 +965,18 @@ section {
 .nav-social {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
 }
 
 .nav-social a {
     color: var(--text-secondary);
-    transition: color 0.2s, transform 0.2s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    transition: color 0.2s;
+    display: inline-flex;
+    padding: 4px;
 }
 
 .nav-social a:hover {
     color: var(--accent-light);
-    transform: translateY(-1px);
 }
 
 .nav-social svg {
@@ -991,19 +1013,6 @@ section {
 
     .timeline-screenshot img {
         max-height: 200px;
-    }
-
-    .nav-social {
-        display: none;
-    }
-
-    .nav-links.open .nav-social,
-    .nav-links.nav-social-mobile {
-        display: flex;
-        justify-content: center;
-        padding-top: 20px;
-        border-top: 1px solid var(--border);
-        margin-top: 20px;
     }
 
     .link-grid {
