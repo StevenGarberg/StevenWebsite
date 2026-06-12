@@ -76,7 +76,8 @@ body {
 .nav-social {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 2px;
+    position: relative;
 }
 
 .nav-social a {
@@ -85,6 +86,7 @@ body {
     display: inline-flex;
     padding: 6px;
     border-radius: 6px;
+    position: relative;
 }
 
 .nav-social a:hover {
@@ -95,6 +97,36 @@ body {
 .nav-social svg {
     width: 16px;
     height: 16px;
+}
+
+.nav-social a::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    background: var(--bg-card);
+    color: var(--text-secondary);
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s, transform 0.15s;
+    border: 1px solid var(--border);
+    z-index: 10;
+}
+
+.nav-social a:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 
 .nav-logo {
@@ -924,6 +956,10 @@ section {
 @media (max-width: 640px) {
     section {
         padding: 72px 0;
+    }
+
+    .nav-social {
+        display: none;
     }
 
     .nav-links {
