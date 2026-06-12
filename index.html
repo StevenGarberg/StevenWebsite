@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steven Garberg | Head of Engineering</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">SG</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <div class="hero-avatar-wrapper">
+                <div class="avatar-ring"></div>
+                <img src="images/avatar.jpg" alt="Steven Garberg" class="hero-avatar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="avatar-placeholder">SG</div>
+            </div>
+            <p class="hero-overline">Head of Engineering &amp; Tech Entrepreneur</p>
+            <h1 class="hero-name">Steven Garberg</h1>
+            <p class="hero-tagline">Building secure, scalable SaaS products across healthcare, payments, and AI.</p>
+            <div class="hero-tech-stack">
+                <span class="tech-badge">C#</span>
+                <span class="tech-badge">.NET</span>
+                <span class="tech-badge">Azure</span>
+                <span class="tech-badge">Blazor</span>
+            </div>
+            <div class="hero-actions">
+                <a href="#experience" class="btn btn-primary">View Experience</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <p class="about-text">I'm a hands-on engineering leader focused on building secure, scalable SaaS products across healthcare, payments, and AI. As Head of Engineering at Rivia Health, I lead architecture and development for patient payment and engagement platforms built on .NET, Blazor, and Azure.</p>
+                <p class="about-text">I'm currently driving practical, ethical AI adoption across our products and internal operations to improve patient engagement, provider workflows, and product intelligence. Outside of Rivia, I build software products through HootBooks, GigaBite Games, and GigaBite Technologies.</p>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Years in Engineering</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">Head of Eng</span>
+                        <span class="stat-label">Current Role at Rivia Health</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">11 yrs</span>
+                        <span class="stat-label">Entrepreneur via GigaBite</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-delay="0">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-role">Head of Engineering</span>
+                            <span class="timeline-period">Jan 2023 - Present · 3 yrs 6 mos</span>
+                        </div>
+                        <h3 class="timeline-company">Rivia Health <span class="timeline-location">Remote</span></h3>
+                        <p class="timeline-desc">Leading engineering, product, and IT strategy for a fast-growing healthcare fintech SaaS company, delivering scalable patient payment, communication, and AI-powered engagement solutions built on Blazor, .NET, and Azure.</p>
+                        <ul class="timeline-highlights">
+                            <li>Modernized core systems with asynchronous, distributed services improving scalability &amp; throughput</li>
+                            <li>Introduced and operationalized AI across the platform including patient-facing support tools and internal copilots</li>
+                            <li>Built PCI-compliant payment systems with tokenization and multi-processor support</li>
+                            <li>Led integrations with AthenaHealth, Veradigm, Credible, and Greenway Health</li>
+                            <li>Delivered multilingual capabilities (English/Spanish) across applications</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-delay="1">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-role">Owner</span>
+                            <span class="timeline-period">Feb 2015 - Present · 11 yrs 5 mos</span>
+                        </div>
+                        <h3 class="timeline-company">GigaBite Technologies <span class="timeline-location">Self-employed</span></h3>
+                        <p class="timeline-desc">Building and managing multiple software product ventures including HootBooks, GigaBite Games, and various SaaS products.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-delay="2">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-role">Software Design Engineer</span>
+                            <span class="timeline-period">Mar 2022 - Dec 2022 · 10 mos</span>
+                        </div>
+                        <h3 class="timeline-company">Edge R&D <span class="timeline-location">Contract</span></h3>
+                        <p class="timeline-desc">Subcontracted to a major government initiative supporting emergency rental assistance, contributing to full-stack .NET development and cloud-native data processing on Microsoft Azure.</p>
+                        <ul class="timeline-highlights">
+                            <li>Built backend services using .NET 6, Azure Functions, and Logic Apps</li>
+                            <li>Migrated tens of millions of records across Azure SQL and PostgreSQL</li>
+                            <li>Created advanced data grid components using Telerik Kendo UI in Blazor</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-delay="3">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-role">Senior Software Engineer</span>
+                            <span class="timeline-period">Oct 2020 - Mar 2022 · 1 yr 6 mos</span>
+                        </div>
+                        <h3 class="timeline-company">LegalShield</h3>
+                        <p class="timeline-desc">Senior engineer on the backend foundation team, delivering scalable .NET microservices and platform components that powered identity, communications, and data migration.</p>
+                        <ul class="timeline-highlights">
+                            <li>Designed 12+ .NET Core / .NET 6 microservices with focus on high throughput</li>
+                            <li>Tuned critical services to reduce latency by up to 400ms</li>
+                            <li>Implemented integrations with Okta, AWS KMS, Twilio, and SendGrid</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-delay="4">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-role">Software Engineer</span>
+                            <span class="timeline-period">May 2019 - Oct 2020 · 1 yr 6 mos</span>
+                        </div>
+                        <h3 class="timeline-company">Miller Tanner Associates</h3>
+                        <p class="timeline-desc">Full-stack .NET engineer supporting modernization of internal business applications and event management platforms.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-delay="5">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-role">Solutions Architect</span>
+                            <span class="timeline-period">May 2018 - Jun 2020 · 2 yrs 2 mos</span>
+                        </div>
+                        <h3 class="timeline-company">Ignite Technical and Consulting Services <span class="timeline-location">Contract</span></h3>
+                        <p class="timeline-desc">Planned and delivered over a dozen websites for local clients, developed internal dashboards, and managed cloud deployments across AWS and Azure.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-delay="6">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-role">Full-stack Developer</span>
+                            <span class="timeline-period">Jul 2018 - May 2019 · 11 mos</span>
+                        </div>
+                        <h3 class="timeline-company">Reservations.com <span class="timeline-location">Greater Orlando</span></h3>
+                        <p class="timeline-desc">Delivered frontend and backend enhancements across customer-facing .NET applications for a high-traffic travel booking platform.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-delay="7">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-role">Lead Game Developer</span>
+                            <span class="timeline-period">Oct 2016 - Apr 2018 · 1 yr 7 mos</span>
+                        </div>
+                        <h3 class="timeline-company">Pro Media Now Inc. <span class="timeline-location">Contract</span></h3>
+                        <p class="timeline-desc">Led development for a live Unity-based game, driving content expansion, cross-platform deployment, and game balance.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-delay="8">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-role">Web Developer</span>
+                            <span class="timeline-period">Dec 2014 - Jul 2016 · 1 yr 8 mos</span>
+                        </div>
+                        <h3 class="timeline-company">Global CPE Network, LLC <span class="timeline-location">Brandon, FL</span></h3>
+                        <p class="timeline-desc">Developed and maintained web and e-learning platforms, integrating third-party tools and streamlining internal operations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills &amp; Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">Languages &amp; Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">.NET Core / .NET 6+</span>
+                        <span class="skill-tag">Blazor</span>
+                        <span class="skill-tag">Razor Pages</span>
+                        <span class="skill-tag">ASP.NET MVC</span>
+                        <span class="skill-tag">Unity / C#</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">Cloud &amp; Infrastructure</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Microsoft Azure</span>
+                        <span class="skill-tag">Azure Functions</span>
+                        <span class="skill-tag">Azure Logic Apps</span>
+                        <span class="skill-tag">Azure B2C</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Docker</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">Data &amp; Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Azure SQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Cosmos DB</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">DevOps &amp; Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Azure DevOps</span>
+                        <span class="skill-tag">CI/CD Pipelines</span>
+                        <span class="skill-tag">Git / Azure Repos</span>
+                        <span class="skill-tag">Cloudflare</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">Integrations &amp; Services</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Okta / SSO</span>
+                        <span class="skill-tag">Twilio</span>
+                        <span class="skill-tag">SendGrid</span>
+                        <span class="skill-tag">AWS KMS</span>
+                        <span class="skill-tag">Telerik Kendo UI</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML / CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">jQuery</span>
+                        <span class="skill-tag">Knockout.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="cert-name">Microsoft Certified: Azure Fundamentals</h3>
+                    <p class="cert-issuer">Microsoft</p>
+                    <span class="cert-date">Issued May 2023</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="cert-name">Professional Agile Leadership I</h3>
+                    <p class="cert-issuer">Scrum.org</p>
+                    <span class="cert-date">Issued Sep 2022</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="cert-name">Professional Scrum Product Owner I</h3>
+                    <p class="cert-issuer">Scrum.org</p>
+                    <span class="cert-date">Issued Sep 2022</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="cert-name">Professional Scrum Master I</h3>
+                    <p class="cert-issuer">Scrum.org</p>
+                    <span class="cert-date">Issued Sep 2022</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2 class="section-title section-title-light">Let's Connect</h2>
+            <p class="contact-subtitle">I'm always open to discussing engineering leadership, healthcare tech, AI, or new opportunities.</p>
+            <a href="mailto:steven@garberg.com" class="btn btn-primary contact-btn">Get in Touch</a>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Steven Garberg. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
