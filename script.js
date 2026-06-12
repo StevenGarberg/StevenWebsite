@@ -3,6 +3,7 @@
     const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
     const timelineItems = document.querySelectorAll('.timeline-item');
+    const focusCards = document.querySelectorAll('.focus-card');
 
     // Navbar scroll effect
     let lastScroll = 0;
@@ -30,7 +31,7 @@
         });
     });
 
-    // Intersection Observer for timeline items
+    // Intersection Observer for timeline items and focus cards
     if ('IntersectionObserver' in window) {
         var observer = new IntersectionObserver(function(entries) {
             entries.forEach(function(entry) {
@@ -50,9 +51,16 @@
         timelineItems.forEach(function(item) {
             observer.observe(item);
         });
+
+        focusCards.forEach(function(card) {
+            observer.observe(card);
+        });
     } else {
         timelineItems.forEach(function(item) {
             item.classList.add('visible');
+        });
+        focusCards.forEach(function(card) {
+            card.classList.add('visible');
         });
     }
 
